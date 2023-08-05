@@ -23,3 +23,15 @@ html,body {
 .font-primary {
   font-family: 'BDSans';
 }
+
+.heading {
+  font-size: 75px;
+  margin:150px 0 0 60px;
+}
+
+@media (max-width:1000px) {
+  .heading {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}

@@ -109,3 +109,34 @@
 .nav-item:nth-child(3), .nav-item:last-child {
     top:40px;
 }
+
+.nav-item:hover, .contact:hover {
+    cursor: pointer;
+}
+
+.nav-item::after, .contact::after {
+    content: '';
+    width: 135px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    position: absolute;
+    transition: clip-path 0.5s;
+    clip-path: polygon(50% 95%, 50% 95%, 50% 100%, 50% 100%);
+}
+
+.contact::after {
+    top: calc(100% - 28px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after, .contact:hover::after {
+    clip-path: polygon(100% 95%, 0 95%, 0 100%, 100% 100%);
+}
+
+.social:hover {
+    cursor: pointer;
+    filter:invert(25%);
+}
