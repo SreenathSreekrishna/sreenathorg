@@ -17,7 +17,7 @@ const Gallery = () => {
         <div className="heading font-primary">Gallery</div>
         <div className="gallery-container">
             {
-                images.map(e => {
+                images.map((e,i) => {
                     let classes = ["gallery-item"];
                     if (e.wide) {
                         classes.push("wide")
@@ -25,7 +25,11 @@ const Gallery = () => {
                     if (e.tall) {
                         classes.push("tall");
                     }
-                    return <div className={classes.join(" ")} style={{'--img':`url('/assets/images/${e.img}')`}}></div>
+                    return <div className={classes.join(" ")}
+                                style={{'--img':`url('/assets/images/${e.img}')`}}
+                                key={i}
+                            >
+                            </div>
                 })
             }
         </div>

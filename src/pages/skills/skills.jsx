@@ -8,8 +8,8 @@ const Skills = () => {
         </div>
         <div className="skills-container">
             {
-                skills.map(e => {
-                    return <div className="skill">
+                skills.map((e,i) => {
+                    return <div className="skill" key={i}>
                         <img src={`/assets/icons/${e}.png`} alt="" />
                     </div>
                 })
