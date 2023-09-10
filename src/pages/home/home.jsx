@@ -14,7 +14,7 @@ const Home = () => {
 
         <div className="right-side">
             <div className="img"></div>
-            <div className="contact">Contact Me</div>
+            <div className="home-contact">Contact Me</div>
             <div className="socials">
                 <img src="/assets/icons/mail.png" alt="E-Mail" className="social" />
                 <img src="/assets/icons/github.png" alt="Github" className="social" />
