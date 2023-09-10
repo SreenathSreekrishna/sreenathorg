@@ -102,6 +102,11 @@
     position: absolute;
 }
 
+a {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
 .nav-item:nth-child(2), .nav-item:last-child {
     left: 200px;
 }
@@ -123,7 +128,7 @@
     background: var(--primary-color);
     position: absolute;
     transition: clip-path 0.5s;
-    clip-path: polygon(50% 95%, 50% 95%, 50% 100%, 50% 100%);
+    clip-path: polygon(50% 90%, 50% 90%, 50% 100%, 50% 100%);
 }
 
 .home-contact::after {
@@ -133,7 +138,7 @@
 }
 
 .nav-item:hover::after, .home-contact:hover::after {
-    clip-path: polygon(100% 95%, 0 95%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 90%, 0 90%, 0 100%, 100% 100%);
 }
 
 .social:hover {

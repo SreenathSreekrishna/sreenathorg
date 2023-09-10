@@ -40,12 +40,18 @@ const Contact = () => {
         }));
         setStatusDisplay("block");
     }
-    return <div className="contact">
+    return <div className="contact" id="contact">
         <div className="heading font-primary">Contact Me</div>
         <div className="socials">
-            <img src="/assets/icons/mail.png" alt="E-Mail" className="social" />
-            <img src="/assets/icons/github.png" alt="Github" className="social" />
-            <img src="/assets/icons/discord.png" alt="Discord" className="social" />
+            <a href="mailto:sreenathsreekrishna21@gmail.com">
+                <img src="/assets/icons/mail.png" alt="E-Mail" className="social" />
+            </a>
+            <a href="https://github.com/SreenathSreekrishna" target="_blank" rel="noreferrer">
+                <img src="/assets/icons/github.png" alt="Github" className="social" />
+            </a>
+            <a href="https://discord.com/users/933911132408799272" target="_blank" rel="noreferrer">
+                <img src="/assets/icons/discord.png" alt="Discord" className="social" />
+            </a>
         </div>
         <div className="contact-box">
             <form className="contact-form" onSubmit={submit}>
